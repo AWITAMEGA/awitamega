@@ -107,7 +107,7 @@ footer{
 <section class="section">
   <h3>📍 Area Layanan</h3>
   <div class="card">
-    Bandung, Cimahi, dan sekitarnya
+    Bandung, jakarta, dan sekitarnya
   </div>
 </section>
 
@@ -115,7 +115,7 @@ footer{
   <h3>📞 Kontak Kami</h3>
   <div class="card">
     <p>WhatsApp: <b>083181216047/b></p>
-    <p>Email: awitamega@email.com</p>
+    <p>Email: awitamegainti@email.com</p>
   </div>
   <a class="btn" href="https://wa.me/6283181216047">CHAT SEKARANG</a>
 </section>
