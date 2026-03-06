@@ -1,53 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Awita Mega Inti</title>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>AWITA MEGA INTI | HVAC Contractor</title>
+
 <style>
-body{
-font-family: Arial;
+
+*{
 margin:0;
-background:#0f172a;
-color:white;
-text-align:center;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
+body{
+background:#020617;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
 header{
-padding:40px;
-background:#111827;
+position:fixed;
+top:0;
+width:100%;
+background:#020617;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+z-index:1000;
+border-bottom:1px solid #1e293b;
 }
 
 header img{
-width:150px;
+width:50px;
 }
 
-.section{
-padding:40px;
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
 }
 
-.gallery img{
-width:90%;
-max-width:400px;
-margin:10px;
-border-radius:10px;
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#020617,#1e293b);
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:0.8;
 }
 
 .btn{
-display:inline-block;
-padding:12px 20px;
-background:#25D366;
-color:white;
-text-decoration:none;
+background:#22c55e;
+padding:15px 35px;
 border-radius:8px;
+text-decoration:none;
+color:white;
 margin-top:20px;
+display:inline-block;
 }
+
+/* SECTION */
+
+.section{
+padding:100px 20px;
+text-align:center;
+}
+
+/* CARDS */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+margin:15px;
+border-radius:10px;
+width:260px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#334155;
+}
+
+/* PROJECT */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:300px;
+margin:10px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* PARTNER */
+
+.logo-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.logo-grid div{
+background:#1e293b;
+padding:20px;
+margin:10px;
+border-radius:8px;
+}
+
+/* FOOTER */
 
 footer{
 background:#020617;
-padding:20px;
-margin-top:40px;
+padding:40px;
+text-align:center;
+border-top:1px solid #1e293b;
 }
+
+/* WHATSAPP FLOAT */
+
+.wa{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:16px 22px;
+border-radius:40px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* ANIMATION */
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
 </style>
 
 </head>
@@ -55,28 +185,145 @@ margin-top:40px;
 <body>
 
 <header>
+
 <img src="IMG-20260225-WA0001.jpg">
-<h1>AWITA MEGA INTI</h1>
-<p>Jasa HVAC • AC • Mechanical Electrical</p>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#layanan">Layanan</a>
+<a href="#project">Project</a>
+<a href="#partner">Partner</a>
+<a href="#kontak">Kontak</a>
+
+</nav>
+
 </header>
 
-<div class="section">
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>AWITA MEGA INTI</h1>
+
+<p>Kontraktor HVAC Profesional • Instalasi AC Gedung</p>
+
+<a class="btn" href="https://wa.me/6283181216047">
+Konsultasi Gratis
+</a>
+
+</section>
+
+<!-- LAYANAN -->
+
+<section id="layanan" class="section fade">
+
+<h2>Layanan Kami</h2>
+
+<br>
+
+<div class="cards">
+
+<div class="card">Instalasi AC Gedung</div>
+<div class="card">Maintenance HVAC</div>
+<div class="card">BACnet Control System</div>
+<div class="card">Pabrikasi Support HVAC</div>
+<div class="card">Troubleshooting AC</div>
+<div class="card">Mechanical Electrical</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT -->
+
+<section id="project" class="section fade">
+
 <h2>Project Kami</h2>
 
+<br>
+
 <div class="gallery">
+
 <img src="IMG-20260218-WA0004.jpg">
 <img src="IMG-20260124-WA0003.jpg">
 <img src="IMG-20260222-WA0008.jpg">
-</div>
-
-<a class="btn" href="https://wa.me/6283181216047">Chat WhatsApp</a>
 
 </div>
+
+</section>
+
+<!-- PARTNER -->
+
+<section id="partner" class="section fade">
+
+<h2>Brand & Partner</h2>
+
+<br>
+
+<div class="logo-grid">
+
+<div>Daikin</div>
+<div>Panasonic</div>
+<div>Mitsubishi</div>
+<div>LG</div>
+<div>Samsung</div>
+
+</div>
+
+</section>
+
+<!-- KONTAK -->
+
+<section id="kontak" class="section fade">
+
+<h2>Kontak Kami</h2>
+
+<br>
+
+<p>WhatsApp : 083181216047</p>
+
+<br>
+
+<p>
+
+Jl. Jend. H. Amir Machmud No.310 blok B4  
+Cibabat, Cimahi Utara  
+Kota Cimahi  
+Jawa Barat 40513
+
+</p>
+
+</section>
 
 <footer>
-<p>Jl. Jend. H. Amir Machmud No.310 blok B4  
-Cimahi Utara • Jawa Barat</p>
+
+© 2026 AWITA MEGA INTI
+
 </footer>
 
+<a class="wa" href="https://wa.me/6283181216047">
+
+Chat WA
+
+</a>
+
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show")
+}
+})
+})
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el)
+})
+
+</script>
+
 </body>
+
 </html>
