@@ -7,6 +7,27 @@
     <!-- Menggunakan font profesional 'Inter' -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
+        /* Mengatur ukuran logo di pojok kiri */
+.site-logo {
+    height: 50px; /* Atur tinggi logo agar pas dengan menu navigasi */
+    width: auto;  /* Biar lebarnya menyesuaikan otomatis dan tidak gepeng */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Efek sedikit membesar saat kursor diarahkan ke logo */
+.site-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Memastikan navigasi tetap sejajar secara horizontal */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: #0f172a; /* Warna biru gelap sesuai screenshot [1] */
+}
         /* Dasar Desain */
         body {
             margin: 0;
@@ -19,6 +40,19 @@
 
         /* Navigasi */
         nav {
+            !-- Ganti foto pekerja lama dengan logo ini -->
+    <a href="index.html" class="logo-link">
+        <img src="logo-awita.png" alt="Logo Awita Mega Inti" class="site-logo">
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Partner</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+</nav>
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -56,6 +90,22 @@
         }
 
         /* Hero Section */
+        height: 85vh; /* Sedikit lebih tinggi agar lebih megah */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    
+    /* GANTI BAGIAN INI */
+    /* Pastikan 'bg-hvac.jpg' adalah nama file gambar yang Kakak upload ke GitHub */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                      url('bg-hvac.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Memberikan efek paralaks saat di-scroll */
+        }
         section id="project-gallery" class="gallery-section">
         <h2>Proyek Terbaru Kami</h2>
         <div class="gallery-grid">
