@@ -1,447 +1,150 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="id">
-<head><head>
-
-<meta name="google-site-verification" content="kode-dari-google" />
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Awita Mega Inti | Jasa Instalasi AC Gedung Bandung</title>
-
-<meta name="description" content="Awita Mega Inti adalah kontraktor HVAC profesional di Bandung yang melayani instalasi AC gedung, maintenance HVAC, BACnet control dan troubleshooting AC.">
-
-<meta name="keywords" content="jasa AC bandung, instalasi AC gedung, kontraktor HVAC bandung, maintenance AC gedung, awita mega inti">
-
-<meta name="author" content="Awita Mega Inti">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>AWITA MEGA INTI | HVAC Contractor</title>
-
-<style>
-/* Gaya Galeri Proyek */
-        .gallery-section {
-            padding: 80px 10%;
-            background-color: #0f172a;
-            text-align: center;
-        }
-
-        .gallery-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 12px;
-            cursor: pointer;
-            aspect-ratio: 4 / 3;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .gallery-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(15, 23, 42, 0.9));
-            color: white;
-            padding: 20px;
-            text-align: left;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
-        }
-
-        .gallery-overlay h3 {
+    <meta chars!et="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awita Mega Inti - Kontraktor HVAC Profesional</title>
+    <!-- Menggunakan font profesional 'Inter' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Dasar Desain */
+        body {
             margin: 0;
-            font-size: 1.1rem;
-            font-weight: 600;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Biru gelap yang lebih elegan */
+            color: #ffffff;
+            line-height: 1.6;
         }
 
-        .gallery-overlay p {
-            margin: 5px 0 0;
-            font-size: 0.85rem;
+        /* Navigasi */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(15, 23, 42, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px; /* Memberi jarak antar menu agar tidak dempet */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #22c55e; /* Warna hijau premium saat hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
             color: #94a3b8;
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
 
-body{
-background:#020617;
-color:white;
-scroll-behavior:smooth;
-}
+        /* Tombol Utama */
+        .btn-primary {
+            background-color: #22c55e; /* Hijau yang lebih teduh/profesional */
+            color: #ffffff;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.3);
+        }
 
-/* NAVBAR */
+        .btn-primary:hover {
+            background-color: #16a34a;
+            transform: translateY(-2px);
+        }
 
-header{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-background:rgba(2,6,23,0.9);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
+        /* Tombol Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
 
-header img{
-width:50px;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#020617,#1e293b);
-}
-
-.hero h1{
-font-size:50px;
-margin-bottom:10px;
-}
-
-.hero p{
-opacity:0.8;
-}
-
-.btn{
-background:#22c55e;
-padding:15px 35px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-margin-top:20px;
-display:inline-block;
-font-weight:bold;
-}
-
-/* SECTION */
-
-.section{
-padding:100px 20px;
-text-align:center;
-}
-
-/* SERVICES */
-
-.cards{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-margin:15px;
-border-radius:12px;
-width:260px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-12px);
-background:#334155;
-}
-
-/* PROJECT */
-
-.gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.gallery img{
-width:300px;
-margin:12px;
-border-radius:12px;
-transition:0.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.08);
-}
-
-/* PARTNER */
-
-.partner{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.partner div{
-background:#1e293b;
-padding:20px;
-margin:10px;
-border-radius:8px;
-}
-
-/* FOOTER */
-
-footer{
-background:#020617;
-padding:40px;
-text-align:center;
-border-top:1px solid #1e293b;
-}
-
-/* WHATSAPP */
-
-.wa{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:16px 22px;
-border-radius:40px;
-text-decoration:none;
-color:white;
-font-weight:bold;
-}
-
-/* ANIMATION */
-
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:1s;
-}
-
-.show{
-opacity:1;
-transform:translateY(0);
-}
-
-</style>
-
-
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } /* Sederhanakan untuk mobile */
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
+    <nav>
+        <a href="#" class="logo">AWITA</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
 
-<img src="lv_0_20260304105148.jpg >
-
-<nav>
-ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Layanan</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Partner</a></li>
-        <li><a href="#">Kontak</a></li>
-    </ul>
-</nav>
-<a href="#">Home</a>
-<a href="#layanan">Layanan</a>
-<a href="#project">Project</a>
-<a href="#partner">Partner</a>
-<a href="#kontak">Kontak</a>
-
-</nav>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero">
-  section id="project-gallery" class="gallery-section">
-        <h2>Proyek Terbaru Kami</h2>
-        <div class="gallery-grid">
-            <!-- Item Proyek 1 -->
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300" alt="Instalasi HVAC">
-                <div class="gallery-overlay">
-                    <h3>Instalasi Chiller Gedung</h3>
-                    <p>Jakarta, 2023</p>
-                </div>
-            </div>
-            <!-- Item Proyek 2 -->
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300" alt="Ducting System">
-                <div class="gallery-overlay">
-                    <h3>Sistem Ducting Mall</h3>
-                    <p>Surabaya, 2024</p>
-                </div>
-            </div>
-            <!-- Item Proyek 3 -->
-            <div class="gallery-item">
-                <img src="https://via.placeholder.com/400x300" alt="Maintenance AC">
-                <div class="gallery-overlay">
-                    <h3>Maintenance VRV System</h3>
-                    <p>Bali, 2023</p>
-                </div>
-            </div>
-        </div>
+    <section class="hero">
+        <h1>AWITA MEGA INTI</h1>
+        <p>Kontraktor HVAC Profesional • Instalasi AC Gedung</p>
+        <a href="#" class="btn-primary">Konsultasi Gratis</a>
     </section>
 
-<h1>AWITA MEGA INTI</h1>
-
-<p>Kontraktor HVAC Profesional • Instalasi AC Gedung</p>
-
-<a class="btn" href="https://wa.me/6283181216047">
-Konsultasi Gratis
-</a>
-
-</section>
-
-<!-- LAYANAN -->
-
-<section id="layanan" class="section fade">
-
-<h2>Layanan Kami</h2>
-
-<br>
-
-<div class="cards">
-
-<div class="card">Instalasi AC Gedung</div>
-<div class="card">Maintenance HVAC</div>
-<div class="card">BACnet Control System</div>
-<div class="card">Pabrikasi Support HVAC</div>
-<div class="card">Troubleshooting AC</div>
-<div class="card">Mechanical Electrical</div>
-
-</div>
-
-</section>
-
-<!-- PROJECT -->
-
-<section id="project" class="section fade">
-
-<h2>Project Kami</h2>
-
-<br>
-
-<div class="gallery">
-        IMG-20260225-WA0001.jpg">
-<img src="IMG-20260218-WA0004.jpg">
-<img src="IMG-20260124-WA0003.jpg">
-<img src="IMG-20260222-WA0008.jpg">
-        IMG-20260225-WA0001.jpg">
-        
-
-</div>
-
-</section>
-
-<!-- PARTNER -->
-
-<section id="partner" class="section fade">
-
-<h2>Partner Brand</h2>
-
-<br>
-
-<div class="partner">
-
-<div>Daikin</div>
-<div>Panasonic</div>
-<div>Mitsubishi</div>
-<div>LG</div>
-<div>Samsung</div>
-
-</div>
-
-</section>
-
-<!-- KONTAK -->
-
-<section id="kontak" class="section fade">
-
-<h2>Kontak</h2>
-
-<br>
-
-<p>WhatsApp : 083181216047</p>
-
-<br>
-
-<p>
-
-Jl. Jend. H. Amir Machmud No.310 blok B4  
-Cibabat, Cimahi Utara  
-Kota Cimahi  
-Jawa Barat 40513
-
-</p>
-
-</section>
-
-<footer>
-
-© 2026 AWITA MEGA INTI
-
-</footer>
-
-<a class="wa" href="https://wa.me/6283181216047">
-
-Chat WA
-
-</a>
-
-<script>
-
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show")
-}
-})
-})
-
-document.querySelectorAll(".fade").forEach(el=>{
-observer.observe(el)
-})
-
-</script>
+    <a href="https://wa.me/nomorkamu" class="whatsapp-float">
+        Chat WA
+    </a>
 
 </body>
-
 </html>
